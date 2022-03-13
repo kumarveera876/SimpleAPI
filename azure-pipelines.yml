@@ -32,7 +32,7 @@ steps:
   inputs: 
     Command: publish
     publishWebProjcts: false
-    projects: 'src/SimpleAPI/SimpleAPI.csproj'
+    projects: '**/*SimpleAPI/SimpleAPI.csproj'
     arguments: --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
     zipAfterPublish: true
     modifyOutputPath: true
